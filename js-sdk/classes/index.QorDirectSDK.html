@@ -21,7 +21,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">QorDirectSDK</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/8b114ee/src/index.ts#L5">index.ts:5</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/91231f4/src/index.ts#L5">index.ts:5</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -56,40 +56,43 @@
 <ul class="tsd-parameters">
 <li class="tsd-parameter">
 <h5><span class="tsd-kind-property">api<wbr/>Key</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The API key for authentication.</p>
+<div class="tsd-comment tsd-typography"><p>The application API key for authentication.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
 <h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">base<wbr/>Url</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The optional base URL.</p>
+<div class="tsd-comment tsd-typography"><p>The base URL to use when ready for production.  Defaults to sandbox &#39;<a href="https://api-sandbox.qorcommerce.io/v3">https://api-sandbox.qorcommerce.io/v3</a>&#39;.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
 <h5><span class="tsd-kind-property">client<wbr/>Key</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The client key for authentication.</p>
+<div class="tsd-comment tsd-typography"><p>The merchant client key for authentication.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
 <h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">request<wbr/>Id</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The optional request ID.</p>
+<div class="tsd-comment tsd-typography"><p>Optional.  A unique identifier to track transaction.  Defaults to a random generated string value.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="index.QorDirectSDK.html" class="tsd-signature-type tsd-kind-class">QorDirectSDK</a></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<div class="tsd-comment tsd-typography">
+<h4>Example</h4><pre><code class="language-js"><span class="hl-3">import</span><span class="hl-1"> { </span><span class="hl-4">QorDirectSDK</span><span class="hl-1"> } </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-5">&quot;qor-direct-sdk&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-6">const</span><span class="hl-1"> </span><span class="hl-7">client</span><span class="hl-1"> = </span><span class="hl-6">new</span><span class="hl-1"> </span><span class="hl-8">QorDirectSDK</span><span class="hl-1">({</span><br/><span class="hl-1">  </span><span class="hl-4">apiKey:</span><span class="hl-1"> </span><span class="hl-5">&quot;YOUR_API_KEY&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-4">clientKey:</span><span class="hl-1"> </span><span class="hl-5">&quot;YOUR_CLIENT_KEY&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-4">requestId:</span><span class="hl-1"> </span><span class="hl-5">&quot;YOUR_REQUEST_ID&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-4">baseUrl:</span><span class="hl-1"> </span><span class="hl-5">&quot;https://api.qorcommerce.io/v3&quot;</span><br/><span class="hl-1">});</span>
+</code><button>Copy</button></pre>
+</div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/8b114ee/src/index.ts#L18">index.ts:18</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/91231f4/src/index.ts#L30">index.ts:30</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member"><a id="marketplace" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>marketplace</span><a href="#marketplace" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">marketplace</span><span class="tsd-signature-symbol">:</span> <a href="resources_marketplace.Marketplace.html" class="tsd-signature-type tsd-kind-class">Marketplace</a></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/8b114ee/src/index.ts#L7">index.ts:7</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/91231f4/src/index.ts#L7">index.ts:7</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="transactions" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>transactions</span><a href="#transactions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">transactions</span><span class="tsd-signature-symbol">:</span> <a href="resources_transactions.Transactions.html" class="tsd-signature-type tsd-kind-class">Transactions</a></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/8b114ee/src/index.ts#L6">index.ts:6</a></li></ul></aside></section></section></div>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/91231f4/src/index.ts#L6">index.ts:6</a></li></ul></aside></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
