@@ -23,78 +23,93 @@
 <h4>Type declaration</h4>
 <ul class="tsd-parameters">
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">amount</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-property">amount</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Amount processed</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">authcode</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-property">authcode</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Host processor authorization code.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">avs_<wbr/>code</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-property">avs_<wbr/>code</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Address verification service code (if enabled).</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">card_<wbr/>type</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-property">card_<wbr/>type</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Card brand. Values are &#39;visa&#39;, &#39;mastercard&#39;, &#39;amex&#39;, &#39;discover&#39;, &#39;jcb&#39;, diners&#39;.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">cardholder_<wbr/>name</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-property">cardholder_<wbr/>name</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Cardholer name as it appears on the card</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">cv_<wbr/>code</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-property">cv_<wbr/>code</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Card verification code (if enabled).</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">invoice_<wbr/>id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-property">invoice_<wbr/>id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>ID of the invoice (if provided in the payment request).</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">last_<wbr/>4</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-property">last_<wbr/>4</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Last 4 digits of the card number processed.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">order_<wbr/>id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-property">order_<wbr/>id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>ID of the order.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">payment_<wbr/>type</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-property">payment_<wbr/>type</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Type of payment. Values are &#39;cc&#39; (Credit Card) and &#39;ach&#39; (ACH/Bank).</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">settled</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-property">settled</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>&#39;0&#39; = transaction not settled. &#39;1&#39; = transaction has been settled</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">settled_<wbr/>amount</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-property">settled_<wbr/>amount</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Transaction settlement amount</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">settled_<wbr/>date</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-property">settled_<wbr/>date</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Transaction settlement date</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">trxn_<wbr/>date</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-property">trxn_<wbr/>date</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Date and time transaction was processsed. Example: &#39;09-26-2023 06:31 PM&#39;</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">trxn_<wbr/>id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-property">trxn_<wbr/>id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>ID of the transaction</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">trxn_<wbr/>status</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li>
+<h5><span class="tsd-kind-property">trxn_<wbr/>status</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Status of the transaction. Values are &#39;approved&#39; or &#39;declined&#39;</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><span class="tsd-kind-property">trxn_<wbr/>type</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5></li></ul></div>
-<div class="tsd-comment tsd-typography">
-<h4>Param</h4><p>Payment transaction result object.</p>
-
-<h4>Param</h4><p>ID of the transaction.</p>
-
-<h4>Param</h4><p>Status of the transaction. Values are &#39;approved&#39; or &#39;declined&#39;.</p>
-
-<h4>Param</h4><p>Date and time transaction was processed. Example: &#39;09-26-2023 06:31 PM&#39;.</p>
-
-<h4>Param</h4><p>Type of transaction processed. Values are &#39;sale&#39;, &#39;authorize&#39;, &#39;capture&#39;, &#39;void&#39; and &#39;refund&#39;.</p>
-
-<h4>Param</h4><p>Cardholder name as it appears on the card.</p>
-
-<h4>Param</h4><p>Type of payment. Values are &#39;cc&#39; (Credit Card) and &#39;ach&#39; (ACH/Bank).</p>
-
-<h4>Param</h4><p>Card brand. Values are &#39;visa&#39;, &#39;mastercard&#39;, &#39;amex&#39;, &#39;discover&#39;, &#39;jcb&#39;, diners&#39;.</p>
-
-<h4>Param</h4><p>Amount processed.</p>
-
-<h4>Param</h4><p>ID of the invoice (if provided in the payment request).</p>
-
-<h4>Param</h4><p>ID of the order.</p>
-
-<h4>Param</h4><p>Host processor authorization code.</p>
-
-<h4>Param</h4><p>Address verification service code (if enabled).</p>
-
-<h4>Param</h4><p>Card verification code (if enabled).</p>
-
-<h4>Param</h4><p>Last 4 digits of the card number processed.</p>
-
-<h4>Param</h4><p>&#39;0&#39; = transaction not settled. &#39;1&#39; = transaction has been settled.</p>
-
-<h4>Param</h4><p>Transaction settlement date.</p>
-
-<h4>Param</h4><p>Transaction settlement amount.</p>
-</div><aside class="tsd-sources">
+<h5><span class="tsd-kind-property">trxn_<wbr/>type</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Type of transaction processed. Values are &#39;sale&#39;, &#39;authorize&#39;, &#39;capture&#39;, &#39;void&#39; and &#39;refund&#39;</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/223cb9f/src/resources/transactions/types.ts#L23">resources/transactions/types.ts:23</a></li></ul></aside></div>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/223cb9f/src/resources/transactions/types.ts#L4">resources/transactions/types.ts:4</a></li></ul></aside></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
