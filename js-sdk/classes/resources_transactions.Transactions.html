@@ -23,7 +23,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">Transactions</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/a3d9897/src/resources/transactions/index.ts#L6">resources/transactions/index.ts:6</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/a3d9897/src/resources/transactions/index.ts#L13">resources/transactions/index.ts:13</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -35,7 +35,9 @@
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
-<div class="tsd-index-list"><a href="resources_transactions.Transactions.html#fetchCardTransactionById" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>fetch<wbr/>Card<wbr/>Transaction<wbr/>By<wbr/>Id</span></a>
+<div class="tsd-index-list"><a href="resources_transactions.Transactions.html#fetchAchTransactionById" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>fetch<wbr/>Ach<wbr/>Transaction<wbr/>By<wbr/>Id</span></a>
+<a href="resources_transactions.Transactions.html#fetchCardTransactionById" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>fetch<wbr/>Card<wbr/>Transaction<wbr/>By<wbr/>Id</span></a>
+<a href="resources_transactions.Transactions.html#listAchTransactions" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>list<wbr/>Ach<wbr/>Transactions</span></a>
 <a href="resources_transactions.Transactions.html#listCardTransactions" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>list<wbr/>Card<wbr/>Transactions</span></a>
 <a href="resources_transactions.Transactions.html#listCardTransactionsByBatchId" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>list<wbr/>Card<wbr/>Transactions<wbr/>By<wbr/>Batch<wbr/>Id</span></a>
 <a href="resources_transactions.Transactions.html#listCardTransactionsByProfileId" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>list<wbr/>Card<wbr/>Transactions<wbr/>By<wbr/>Profile<wbr/>Id</span></a>
@@ -65,10 +67,30 @@
 <li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/a3d9897/src/resources/base.ts#L23">resources/base.ts:23</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
+<section class="tsd-panel tsd-member"><a id="fetchAchTransactionById" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>fetch<wbr/>Ach<wbr/>Transaction<wbr/>By<wbr/>Id</span><a href="#fetchAchTransactionById" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="fetchAchTransactionById.fetchAchTransactionById-1"><span class="tsd-kind-call-signature">fetch<wbr/>Ach<wbr/>Transaction<wbr/>By<wbr/>Id</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">transaction_id</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.AchTransactionQueryResponse.html" class="tsd-signature-type tsd-kind-type-alias">AchTransactionQueryResponse</a><span class="tsd-signature-symbol">&gt;</span><a href="#fetchAchTransactionById.fetchAchTransactionById-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Fetches an ACH transaction by its ID.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">transaction_id</span>: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The ID of the ACH transaction.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.AchTransactionQueryResponse.html" class="tsd-signature-type tsd-kind-type-alias">AchTransactionQueryResponse</a><span class="tsd-signature-symbol">&gt;</span></h4><p>A promise that resolves to the transaction.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/a3d9897/src/resources/transactions/index.ts#L60">resources/transactions/index.ts:60</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="fetchCardTransactionById" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>fetch<wbr/>Card<wbr/>Transaction<wbr/>By<wbr/>Id</span><a href="#fetchCardTransactionById" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="fetchCardTransactionById.fetchCardTransactionById-1"><span class="tsd-kind-call-signature">fetch<wbr/>Card<wbr/>Transaction<wbr/>By<wbr/>Id</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">trxn_id</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.CardTransactionResponse.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionResponse</a><span class="tsd-signature-symbol">&gt;</span><a href="#fetchCardTransactionById.fetchCardTransactionById-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="fetchCardTransactionById.fetchCardTransactionById-1"><span class="tsd-kind-call-signature">fetch<wbr/>Card<wbr/>Transaction<wbr/>By<wbr/>Id</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">trxn_id</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.CardTransactionQueryResponse.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionQueryResponse</a><span class="tsd-signature-symbol">&gt;</span><a href="#fetchCardTransactionById.fetchCardTransactionById-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Fetches a transaction by its ID.</p>
 </div>
@@ -80,15 +102,32 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the transaction.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.CardTransactionResponse.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionResponse</a><span class="tsd-signature-symbol">&gt;</span></h4><p>A promise that resolves to the transaction.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.CardTransactionQueryResponse.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionQueryResponse</a><span class="tsd-signature-symbol">&gt;</span></h4><p>A promise that resolves to the transaction.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/a3d9897/src/resources/transactions/index.ts#L14">resources/transactions/index.ts:14</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/a3d9897/src/resources/transactions/index.ts#L21">resources/transactions/index.ts:21</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="listAchTransactions" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>list<wbr/>Ach<wbr/>Transactions</span><a href="#listAchTransactions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="listAchTransactions.listAchTransactions-1"><span class="tsd-kind-call-signature">list<wbr/>Ach<wbr/>Transactions</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">queryParams</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.AchTransactionQueryResponse.html" class="tsd-signature-type tsd-kind-type-alias">AchTransactionQueryResponse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#listAchTransactions.listAchTransactions-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Retrieves a list of ACH transactions.  The maximum number of transactions returned per API call is 250. If you require more than 250 use the &#39;limit&#39; and &#39;offset&#39; parameters</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">queryParams</span>: <a href="../types/resources_transactions_types.AchTransactionQueryParams.html" class="tsd-signature-type tsd-kind-type-alias">AchTransactionQueryParams</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.AchTransactionQueryResponse.html" class="tsd-signature-type tsd-kind-type-alias">AchTransactionQueryResponse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><p>A promise that resolves to an array of transactions.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/a3d9897/src/resources/transactions/index.ts#L69">resources/transactions/index.ts:69</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="listCardTransactions" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>list<wbr/>Card<wbr/>Transactions</span><a href="#listCardTransactions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="listCardTransactions.listCardTransactions-1"><span class="tsd-kind-call-signature">list<wbr/>Card<wbr/>Transactions</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">queryParams</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.CardTransactionResponse.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionResponse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#listCardTransactions.listCardTransactions-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="listCardTransactions.listCardTransactions-1"><span class="tsd-kind-call-signature">list<wbr/>Card<wbr/>Transactions</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">queryParams</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.CardTransactionQueryResponse.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionQueryResponse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#listCardTransactions.listCardTransactions-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Retrieves a list of transactions.  The maximum number of transactions returned per API call is 250. If you require more than 250 use the &#39;limit&#39; and &#39;offset&#39; parameters</p>
 </div>
@@ -96,16 +135,16 @@
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">queryParams</span>: <a href="../types/resources_transactions_types.CardQueryParams.html" class="tsd-signature-type tsd-kind-type-alias">CardQueryParams</a></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.CardTransactionResponse.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionResponse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><p>A promise that resolves to an array of transactions.</p>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">queryParams</span>: <a href="../types/resources_transactions_types.CardTransactionQueryParams.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionQueryParams</a></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.CardTransactionQueryResponse.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionQueryResponse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><p>A promise that resolves to an array of transactions.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/a3d9897/src/resources/transactions/index.ts#L23">resources/transactions/index.ts:23</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/a3d9897/src/resources/transactions/index.ts#L30">resources/transactions/index.ts:30</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="listCardTransactionsByBatchId" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>list<wbr/>Card<wbr/>Transactions<wbr/>By<wbr/>Batch<wbr/>Id</span><a href="#listCardTransactionsByBatchId" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="listCardTransactionsByBatchId.listCardTransactionsByBatchId-1"><span class="tsd-kind-call-signature">list<wbr/>Card<wbr/>Transactions<wbr/>By<wbr/>Batch<wbr/>Id</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">batch_id</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.CardTransactionResponse.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionResponse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#listCardTransactionsByBatchId.listCardTransactionsByBatchId-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="listCardTransactionsByBatchId.listCardTransactionsByBatchId-1"><span class="tsd-kind-call-signature">list<wbr/>Card<wbr/>Transactions<wbr/>By<wbr/>Batch<wbr/>Id</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">batch_id</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.CardTransactionQueryResponse.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionQueryResponse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#listCardTransactionsByBatchId.listCardTransactionsByBatchId-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Retrieves a list of transactions by the customer transaction batch ID.</p>
 </div>
@@ -117,15 +156,15 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the batch.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.CardTransactionResponse.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionResponse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><p>A promise that resolves to an array of transactions.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.CardTransactionQueryResponse.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionQueryResponse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><p>A promise that resolves to an array of transactions.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/a3d9897/src/resources/transactions/index.ts#L43">resources/transactions/index.ts:43</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/a3d9897/src/resources/transactions/index.ts#L50">resources/transactions/index.ts:50</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="listCardTransactionsByProfileId" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>list<wbr/>Card<wbr/>Transactions<wbr/>By<wbr/>Profile<wbr/>Id</span><a href="#listCardTransactionsByProfileId" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="listCardTransactionsByProfileId.listCardTransactionsByProfileId-1"><span class="tsd-kind-call-signature">list<wbr/>Card<wbr/>Transactions<wbr/>By<wbr/>Profile<wbr/>Id</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">profile_id</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.CardTransactionResponse.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionResponse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#listCardTransactionsByProfileId.listCardTransactionsByProfileId-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="listCardTransactionsByProfileId.listCardTransactionsByProfileId-1"><span class="tsd-kind-call-signature">list<wbr/>Card<wbr/>Transactions<wbr/>By<wbr/>Profile<wbr/>Id</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">profile_id</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.CardTransactionQueryResponse.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionQueryResponse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><a href="#listCardTransactionsByProfileId.listCardTransactionsByProfileId-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Retrieves a list of transactions by the customer profile ID.</p>
 </div>
@@ -137,11 +176,11 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the profile.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.CardTransactionResponse.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionResponse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><p>A promise that resolves to an array of transactions.</p>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_transactions_types.CardTransactionQueryResponse.html" class="tsd-signature-type tsd-kind-type-alias">CardTransactionQueryResponse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4><p>A promise that resolves to an array of transactions.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/a3d9897/src/resources/transactions/index.ts#L33">resources/transactions/index.ts:33</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/a3d9897/src/resources/transactions/index.ts#L40">resources/transactions/index.ts:40</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="request" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>request</span><a href="#request" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -198,7 +237,9 @@
 <div class="tsd-accordion-details">
 <ul>
 <li><a href="#constructor" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
+<li><a href="#fetchAchTransactionById" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>fetch<wbr/>Ach<wbr/>Transaction<wbr/>By<wbr/>Id</span></a></li>
 <li><a href="#fetchCardTransactionById" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>fetch<wbr/>Card<wbr/>Transaction<wbr/>By<wbr/>Id</span></a></li>
+<li><a href="#listAchTransactions" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>list<wbr/>Ach<wbr/>Transactions</span></a></li>
 <li><a href="#listCardTransactions" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>list<wbr/>Card<wbr/>Transactions</span></a></li>
 <li><a href="#listCardTransactionsByBatchId" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>list<wbr/>Card<wbr/>Transactions<wbr/>By<wbr/>Batch<wbr/>Id</span></a></li>
 <li><a href="#listCardTransactionsByProfileId" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>list<wbr/>Card<wbr/>Transactions<wbr/>By<wbr/>Profile<wbr/>Id</span></a></li>
