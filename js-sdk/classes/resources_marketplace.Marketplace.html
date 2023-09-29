@@ -23,7 +23,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">Marketplace</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/91231f4/src/resources/marketplace/index.ts#L8">resources/marketplace/index.ts:8</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/275b965/src/resources/marketplace/index.ts#L11">resources/marketplace/index.ts:11</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -35,7 +35,8 @@
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
-<div class="tsd-index-list"><a href="resources_marketplace.Marketplace.html#fetchMarketplaceTransactionByBatchId" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>fetch<wbr/>Marketplace<wbr/>Transaction<wbr/>By<wbr/>Batch<wbr/>Id</span></a>
+<div class="tsd-index-list"><a href="resources_marketplace.Marketplace.html#createMarketplaceMerchantAccount" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>Marketplace<wbr/>Merchant<wbr/>Account</span></a>
+<a href="resources_marketplace.Marketplace.html#fetchMarketplaceTransactionByBatchId" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>fetch<wbr/>Marketplace<wbr/>Transaction<wbr/>By<wbr/>Batch<wbr/>Id</span></a>
 <a href="resources_marketplace.Marketplace.html#request" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>request</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
@@ -59,9 +60,31 @@
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="resources_base.Base.html">Base</a>.<a href="resources_base.Base.html#constructor">constructor</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/91231f4/src/resources/base.ts#L23">resources/base.ts:23</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/275b965/src/resources/base.ts#L23">resources/base.ts:23</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
+<section class="tsd-panel tsd-member"><a id="createMarketplaceMerchantAccount" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>create<wbr/>Marketplace<wbr/>Merchant<wbr/>Account</span><a href="#createMarketplaceMerchantAccount" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="createMarketplaceMerchantAccount.createMarketplaceMerchantAccount-1"><span class="tsd-kind-call-signature">create<wbr/>Marketplace<wbr/>Merchant<wbr/>Account</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">merchant</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_marketplace_types.MarketplaceMerchantResponse.html" class="tsd-signature-type tsd-kind-type-alias">MarketplaceMerchantResponse</a><span class="tsd-signature-symbol">&gt;</span><a href="#createMarketplaceMerchantAccount.createMarketplaceMerchantAccount-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Creates a new marketplace merchant account.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">merchant</span>: <a href="../types/resources_marketplace_types.MarketplaceMerchant.html" class="tsd-signature-type tsd-kind-type-alias">MarketplaceMerchant</a></h5>
+<div class="tsd-comment tsd-typography"><p>The merchant object containing the details of the merchant.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_marketplace_types.MarketplaceMerchantResponse.html" class="tsd-signature-type tsd-kind-type-alias">MarketplaceMerchantResponse</a><span class="tsd-signature-symbol">&gt;</span></h4><ul>
+<li>A promise that resolves to the response of the API call.</li>
+</ul>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/275b965/src/resources/marketplace/index.ts#L29">resources/marketplace/index.ts:29</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="fetchMarketplaceTransactionByBatchId" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>fetch<wbr/>Marketplace<wbr/>Transaction<wbr/>By<wbr/>Batch<wbr/>Id</span><a href="#fetchMarketplaceTransactionByBatchId" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -81,7 +104,7 @@
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/91231f4/src/resources/marketplace/index.ts#L16">resources/marketplace/index.ts:16</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/275b965/src/resources/marketplace/index.ts#L19">resources/marketplace/index.ts:19</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="request" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>request</span><a href="#request" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -117,7 +140,7 @@
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="resources_base.Base.html">Base</a>.<a href="resources_base.Base.html#request">request</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/91231f4/src/resources/base.ts#L42">resources/base.ts:42</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/275b965/src/resources/base.ts#L42">resources/base.ts:42</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -138,6 +161,7 @@
 <div class="tsd-accordion-details">
 <ul>
 <li><a href="#constructor" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
+<li><a href="#createMarketplaceMerchantAccount" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>create<wbr/>Marketplace<wbr/>Merchant<wbr/>Account</span></a></li>
 <li><a href="#fetchMarketplaceTransactionByBatchId" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>fetch<wbr/>Marketplace<wbr/>Transaction<wbr/>By<wbr/>Batch<wbr/>Id</span></a></li>
 <li><a href="#request" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>request</span></a></li></ul></div></details></div>
 <div class="site-menu">
