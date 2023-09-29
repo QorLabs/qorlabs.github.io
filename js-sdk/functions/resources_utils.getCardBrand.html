@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>PaymentTransactionFetchResponse | qor-direct-sdk</title><meta name="description" content="Documentation for qor-direct-sdk"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>getCardBrand | qor-direct-sdk</title><meta name="description" content="Documentation for qor-direct-sdk"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,38 +13,28 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../index.html">qor-direct-sdk</a></li>
-<li><a href="../modules/resources_transactions_types.html">resources/transactions/types</a></li>
-<li><a href="resources_transactions_types.PaymentTransactionFetchResponse.html">PaymentTransactionFetchResponse</a></li></ul>
-<h1>Type alias PaymentTransactionFetchResponse</h1></div>
-<div class="tsd-signature"><span class="tsd-kind-type-alias">Payment<wbr/>Transaction<wbr/>Fetch<wbr/>Response</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">code</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">data</span><span class="tsd-signature-symbol">: </span><a href="resources_transactions_types.PaymentTransactionResultObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentTransactionResultObject</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">message</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">status</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
-<div class="tsd-comment tsd-typography"><p>Represents the payment transaction fetch response.</p>
+<li><a href="../modules/resources_utils.html">resources/utils</a></li>
+<li><a href="resources_utils.getCardBrand.html">getCardBrand</a></li></ul>
+<h1>Function getCardBrand</h1></div>
+<section class="tsd-panel">
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="getCardBrand"><span class="tsd-kind-call-signature">get<wbr/>Card<wbr/>Brand</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">cardNumber</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><a href="#getCardBrand" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Determines the credit card brand based on the credit card number.</p>
 </div>
-<div class="tsd-type-declaration">
-<h4>Type declaration</h4>
-<ul class="tsd-parameters">
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">code</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The payment gateway response code. See <a href="https://docs.qorcommerce.io/docs/payment-response-codes">Payment Response Codes</a> for code descriptions.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">data</span><span class="tsd-signature-symbol">: </span><a href="resources_transactions_types.PaymentTransactionResultObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentTransactionResultObject</a></h5>
-<div class="tsd-comment tsd-typography"><p>The fetched payment transaction object.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">message</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>Message associated with the response code.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">status</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The status of the transaction. Possible response values are &#39;ok&#39; and &#39;error&#39;.</p>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">cardNumber</span>: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The credit card number.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><p>The credit card brand (e.g., &quot;Visa&quot;, &quot;Mastercard&quot;, &quot;American Express&quot;).</p>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/bab2b6b/src/resources/transactions/types.ts#L44">resources/transactions/types.ts:44</a></li></ul></aside></div>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/bab2b6b/src/resources/utils.ts#L109">resources/utils.ts:109</a></li></ul></aside></li></ul></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>PaymentTransactionFetchResponse | qor-direct-sdk</title><meta name="description" content="Documentation for qor-direct-sdk"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>Payments | qor-direct-sdk</title><meta name="description" content="Documentation for qor-direct-sdk"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,38 +13,113 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../index.html">qor-direct-sdk</a></li>
-<li><a href="../modules/resources_transactions_types.html">resources/transactions/types</a></li>
-<li><a href="resources_transactions_types.PaymentTransactionFetchResponse.html">PaymentTransactionFetchResponse</a></li></ul>
-<h1>Type alias PaymentTransactionFetchResponse</h1></div>
-<div class="tsd-signature"><span class="tsd-kind-type-alias">Payment<wbr/>Transaction<wbr/>Fetch<wbr/>Response</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">code</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">data</span><span class="tsd-signature-symbol">: </span><a href="resources_transactions_types.PaymentTransactionResultObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentTransactionResultObject</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">message</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">status</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
-<div class="tsd-comment tsd-typography"><p>Represents the payment transaction fetch response.</p>
+<li><a href="../modules/resources_payments.html">resources/payments</a></li>
+<li><a href="resources_payments.Payments.html">Payments</a></li></ul>
+<h1>Class Payments</h1></div>
+<section class="tsd-panel tsd-hierarchy">
+<h4>Hierarchy</h4>
+<ul class="tsd-hierarchy">
+<li><a href="resources_base.Base.html" class="tsd-signature-type tsd-kind-class">Base</a>
+<ul class="tsd-hierarchy">
+<li><span class="target">Payments</span></li></ul></li></ul></section><aside class="tsd-sources">
+<ul>
+<li>Defined in resources/payments/index.ts:20</li></ul></aside>
+<section class="tsd-panel-group tsd-index-group">
+<section class="tsd-panel tsd-index-panel">
+<details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
+<h5 class="tsd-index-heading uppercase" role="button" aria-expanded="false" tabIndex=0><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-chevronSmall"></use></svg> Index</h5></summary>
+<div class="tsd-accordion-details">
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Constructors</h3>
+<div class="tsd-index-list"><a href="resources_payments.Payments.html#constructor" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a>
+</div></section>
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Methods</h3>
+<div class="tsd-index-list"><a href="resources_payments.Payments.html#processManualCardSale" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>process<wbr/>Manual<wbr/>Card<wbr/>Sale</span></a>
+<a href="resources_payments.Payments.html#request" class="tsd-index-link tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>request</span></a>
+</div></section></div></details></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Constructors</h2>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="constructor" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_Payments"><span class="tsd-kind-constructor-signature">new <wbr/>Payments</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">config</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="resources_payments.Payments.html" class="tsd-signature-type tsd-kind-class">Payments</a><a href="#constructor.new_Payments" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Constructor function for the Config class.</p>
 </div>
-<div class="tsd-type-declaration">
-<h4>Type declaration</h4>
-<ul class="tsd-parameters">
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">code</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The payment gateway response code. See <a href="https://docs.qorcommerce.io/docs/payment-response-codes">Payment Response Codes</a> for code descriptions.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">data</span><span class="tsd-signature-symbol">: </span><a href="resources_transactions_types.PaymentTransactionResultObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentTransactionResultObject</a></h5>
-<div class="tsd-comment tsd-typography"><p>The fetched payment transaction object.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">message</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>Message associated with the response code.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">status</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The status of the transaction. Possible response values are &#39;ok&#39; and &#39;error&#39;.</p>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">config</span>: <span class="tsd-signature-type ">Config</span></h5>
+<div class="tsd-comment tsd-typography"><p>The configuration options for the class.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="resources_payments.Payments.html" class="tsd-signature-type tsd-kind-class">Payments</a></h4>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Inherited from <a href="resources_base.Base.html">Base</a>.<a href="resources_base.Base.html#constructor">constructor</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/bab2b6b/src/resources/base.ts#L22">resources/base.ts:22</a></li></ul></aside></li></ul></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Methods</h2>
+<section class="tsd-panel tsd-member"><a id="processManualCardSale" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>process<wbr/>Manual<wbr/>Card<wbr/>Sale</span><a href="#processManualCardSale" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="processManualCardSale.processManualCardSale-1"><span class="tsd-kind-call-signature">process<wbr/>Manual<wbr/>Card<wbr/>Sale</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">card</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_payments_types.PaymentCardResponse.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCardResponse</a><span class="tsd-signature-symbol">&gt;</span><a href="#processManualCardSale.processManualCardSale-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Processes a manual card sale.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">card</span>: <a href="../types/resources_payments_types.PaymentCardManualInputParams.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCardManualInputParams</a></h5>
+<div class="tsd-comment tsd-typography"><p>The payment card params for the manual input.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/resources_payments_types.PaymentCardResponse.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCardResponse</a><span class="tsd-signature-symbol">&gt;</span></h4><ul>
+<li>The promise that resolves with the payment card response.</li>
+</ul>
+
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/bab2b6b/src/resources/transactions/types.ts#L44">resources/transactions/types.ts:44</a></li></ul></aside></div>
+<li>Defined in resources/payments/index.ts:28</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="request" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>request</span><a href="#request" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
+<li class="tsd-signature tsd-anchor-link" id="request.request-1"><span class="tsd-kind-call-signature">request</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">endpoint</span>, <span class="tsd-kind-parameter">queryParams</span><span class="tsd-signature-symbol">?</span>, <span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><a href="#request.request-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Sends a request to the specified endpoint with optional query parameters and options.</p>
+</div>
+<section class="tsd-panel">
+<h4>Type Parameters</h4>
+<ul class="tsd-type-parameter-list">
+<li>
+<h4><span class="tsd-kind-type-parameter">T</span></h4></li></ul></section>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">endpoint</span>: <span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The endpoint to send the request to.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">queryParams</span>: <span class="tsd-signature-type ">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+<div class="tsd-comment tsd-typography"><p>Optional query parameters for the request.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">options</span>: <span class="tsd-signature-type ">RequestInit</span></h5>
+<div class="tsd-comment tsd-typography"><p>Optional additional options for the request.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span></h4><p>A promise that resolves to the response data.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Inherited from <a href="resources_base.Base.html">Base</a>.<a href="resources_base.Base.html#request">request</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/bab2b6b/src/resources/base.ts#L37">resources/base.ts:37</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -59,7 +134,14 @@
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><use href="#icon-checkbox"></use></svg><span>Inherited</span></label></li>
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><use href="#icon-checkbox"></use></svg><span>External</span></label></li></ul></form></div>
 <div class="tsd-theme-toggle">
-<h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div></div>
+<h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<details open class="tsd-index-accordion tsd-page-navigation"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg>On This Page</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li><a href="#constructor" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-512"></use></svg><span>constructor</span></a></li>
+<li><a href="#processManualCardSale" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>process<wbr/>Manual<wbr/>Card<wbr/>Sale</span></a></li>
+<li><a href="#request" class="tsd-is-protected tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>request</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../index.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>qor-direct-sdk</span></a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">
