@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>PaymentCardRequest | qor-direct-sdk</title><meta name="description" content="Documentation for qor-direct-sdk"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>PaymentCard3dsObject | qor-direct-sdk</title><meta name="description" content="Documentation for qor-direct-sdk"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,138 +13,41 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../index.html">qor-direct-sdk</a></li>
-<li><a href="../modules/types_payments.html">types/payments</a></li>
-<li><a href="types_payments.PaymentCardRequest.html">PaymentCardRequest</a></li></ul>
-<h1>Type alias PaymentCardRequest</h1></div>
-<div class="tsd-signature"><span class="tsd-kind-type-alias">Payment<wbr/>Card<wbr/>Request</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">card_detail</span><span class="tsd-signature-symbol">?: </span><a href="types_payments.PaymentCardObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCardObject</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">currency</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">customer_detail</span><span class="tsd-signature-symbol">?: </span><a href="types_payments.PaymentCustomerObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCustomerObject</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">discount_detail</span><span class="tsd-signature-symbol">?: </span><a href="types_payments.PaymentDiscountObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentDiscountObject</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">invoice_id</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">ip_address</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">items_detail</span><span class="tsd-signature-symbol">?: </span><a href="types_payments.PaymentItemsObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentItemsObject</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">meta_data</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">mid</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">order_id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">purchase_order</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">reference_id</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">risk_score</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">send_receipt</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">service_charge</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">shipping_detail</span><span class="tsd-signature-symbol">?: </span><a href="types_payments.PaymentShippingObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentShippingObject</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">terminal_id</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">three_ds</span><span class="tsd-signature-symbol">?: </span><a href="types_payments.PaymentCard3dsObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCard3dsObject</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">token_detail</span><span class="tsd-signature-symbol">?: </span><a href="types_payments.PaymentCardTokenObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCardTokenObject</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">topt</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">total_amount</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">total_tax_amount</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">track_detail</span><span class="tsd-signature-symbol">: </span><a href="types_payments.PaymentCardTrackObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCardTrackObject</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">type</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;string&quot;</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
-<div class="tsd-comment tsd-typography"><p>Parameters to process a credit card sale or authorization.</p>
+<li><a href="../modules/types_card_payments.html">types/card-payments</a></li>
+<li><a href="types_card_payments.PaymentCard3dsObject.html">PaymentCard3dsObject</a></li></ul>
+<h1>Type alias PaymentCard3dsObject</h1></div>
+<div class="tsd-signature"><span class="tsd-kind-type-alias">Payment<wbr/>Card3ds<wbr/>Object</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">CAVV</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">ECIFlag</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">XID</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">response</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
+<div class="tsd-comment tsd-typography"><p>Payment credit card 3-D Secure object.</p>
 </div>
 <div class="tsd-type-declaration">
 <h4>Type declaration</h4>
 <ul class="tsd-parameters">
 <li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">card_<wbr/>detail</span><span class="tsd-signature-symbol">?: </span><a href="types_payments.PaymentCardObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCardObject</a></h5>
-<div class="tsd-comment tsd-typography"><p>The credit card detail object.  Required if <code>token_detail</code> is not provided</p>
+<h5><span class="tsd-kind-property">CAVV</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The 3-D Secure Cardholder Authentication Verification Value (MasterCard’s UCAF value)</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">currency</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The ISO-4127 3 character currency code accepted for this transaction.  Defaults to &#39;USD</p>
+<h5><span class="tsd-kind-property">ECIFlag</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Electronic Commerce Indicator
+<code>0</code> = Payment has been flagged as SSL secured transaction
+<code>1</code> = Payment has been flagged as SSL 3-D Secure authentication transaction (cardholder enrolled)
+<code>2</code> = Payment has been flagged as SSL 3-D Secure authentication transaction (cardholder not enrolled or partial authenticated)</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">customer_<wbr/>detail</span><span class="tsd-signature-symbol">?: </span><a href="types_payments.PaymentCustomerObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCustomerObject</a></h5>
-<div class="tsd-comment tsd-typography"><p>The payment customer detail object</p>
+<h5><span class="tsd-kind-property">XID</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>3-D Secure transaction ID</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li>
 <li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">discount_<wbr/>detail</span><span class="tsd-signature-symbol">?: </span><a href="types_payments.PaymentDiscountObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentDiscountObject</a></h5>
-<div class="tsd-comment tsd-typography"><p>The payment discount object</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">invoice_<wbr/>id</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>Associate payment transaction with an invoice</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">ip_<wbr/>address</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>Payment originating IP address.  If not provided the system will attempt to qualify an ip address from the request host value</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">items_<wbr/>detail</span><span class="tsd-signature-symbol">?: </span><a href="types_payments.PaymentItemsObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentItemsObject</a></h5>
-<div class="tsd-comment tsd-typography"><p>The payment sale items sold array</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">meta_<wbr/>data</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
-<div class="tsd-comment tsd-typography"><p>Key-value pairs for storing additional information about the payment in a structured format.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">mid</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The merchant account id assigned by the service provider that will process the payment</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">order_<wbr/>id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>Unique order ID for this transaction. If not provided, a unique order id will be generated as &#39;ORDER_&lt;8 random characters&gt;.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">purchase_<wbr/>order</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>Associate payment transaction with a purchase order number</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">reference_<wbr/>id</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>An internal reference id that will be echo&#39;d back in the message response.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">risk_<wbr/>score</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>Risk score to associate with payment transaction.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">send_<wbr/>receipt</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span></h5>
-<div class="tsd-comment tsd-typography"><p>Set <code>true</code> to send the customer an email payment receipt.  If <code>true</code> you must provide a <code>customer.email</code> value.  Default is <code>false</code>.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">service_<wbr/>charge</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The amount of this transaction that should be allocated to a service charge.  Cannot exceed payment request <code>amount</code> value.  Use numbers for dollar amount and up to 2 decimal places for cents.  Example $100.00 could be 100 or 100.0</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">shipping_<wbr/>detail</span><span class="tsd-signature-symbol">?: </span><a href="types_payments.PaymentShippingObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentShippingObject</a></h5>
-<div class="tsd-comment tsd-typography"><p>The payment transaction shipping object</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">terminal_<wbr/>id</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>A terminal id for processing (can be use as a reference).  <strong>Required for marketplace transactions</strong></p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">three_<wbr/>ds</span><span class="tsd-signature-symbol">?: </span><a href="types_payments.PaymentCard3dsObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCard3dsObject</a></h5>
-<div class="tsd-comment tsd-typography"><p>The payment 3-D Secure object.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">token_<wbr/>detail</span><span class="tsd-signature-symbol">?: </span><a href="types_payments.PaymentCardTokenObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCardTokenObject</a></h5>
-<div class="tsd-comment tsd-typography"><p>The credit card token detail object.  Required if <code>card_detail</code> is not provided</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">topt</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>Route a transaction to an external provider.  Your servicee provider will provide value(s) required here.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">total_<wbr/>amount</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The total amount to process.  Use numbers for dollar amount and up to 2 decimal places for cents.  Example $100.00 could be 100 or 100.00</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">total_<wbr/>tax_<wbr/>amount</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The total tax amount for this transaction.  Required for Level 2 and Level 3 transactions.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">track_<wbr/>detail</span><span class="tsd-signature-symbol">: </span><a href="types_payments.PaymentCardTrackObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCardTrackObject</a></h5>
-<div class="tsd-comment tsd-typography"><p>The credit card magenetic stripe data</p>
-</div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li class="tsd-parameter">
-<h5><span class="tsd-kind-property">type</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;string&quot;</span></h5>
-<div class="tsd-comment tsd-typography"><p>Set processing type.  Accepted values are &#39;sale&#39; and &#39;authorize&#39;</p>
+<h5><span class="tsd-kind-property">response</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Status response from 3-D Secure provider. Possible values are typically success, failure, noaction or error but can vary depending on provider</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/35e8e2f/src/types/payments.ts#L110">types/payments.ts:110</a></li></ul></aside></div>
+<li>Defined in types/card-payments.ts:93</li></ul></aside></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -169,8 +72,8 @@
 <li><a href="../modules/resources_proof_of_delivery.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/proof-of-delivery</a></li>
 <li><a href="../modules/resources_transactions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/transactions</a></li>
 <li><a href="../modules/resources_utils.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/utils</a></li>
+<li><a href="../modules/types_card_payments.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/card-payments</a></li>
 <li><a href="../modules/types_marketplace.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/marketplace</a></li>
-<li><a href="../modules/types_payments.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/payments</a></li>
 <li><a href="../modules/types_proof_of_delivery.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/proof-of-delivery</a></li>
 <li><a href="../modules/types_transactions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/transactions</a></li></ul></nav></div></div></div>
 <div class="tsd-generator">
