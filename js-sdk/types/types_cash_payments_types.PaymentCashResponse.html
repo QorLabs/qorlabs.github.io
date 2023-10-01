@@ -16,12 +16,42 @@
 <li><a href="../modules/types_cash_payments_types.html">types/cash-payments.types</a></li>
 <li><a href="types_cash_payments_types.PaymentCashResponse.html">PaymentCashResponse</a></li></ul>
 <h1>Type alias PaymentCashResponse</h1></div>
-<div class="tsd-signature"><span class="tsd-kind-type-alias">Payment<wbr/>Cash<wbr/>Response</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+<div class="tsd-signature"><span class="tsd-kind-type-alias">Payment<wbr/>Cash<wbr/>Response</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">amount_recorded</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">code</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">message</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">status</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">transaction_date</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">transaction_id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
 <div class="tsd-type-declaration">
 <h4>Type declaration</h4>
-<ul class="tsd-parameters"></ul></div><aside class="tsd-sources">
+<ul class="tsd-parameters">
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">amount_<wbr/>recorded</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Total amount recorded</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">code</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The payment gateway response code. See <a href="https://docs.qorcommerce.io/docs/payment-response-codes">Payment Response Codes</a> for code descriptions.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">message</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Message associated with the response code.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">status</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The status of the transaction. Possible response values are &#39;approved&#39;, &#39;declined&#39; and &#39;error&#39;.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">transaction_<wbr/>date</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The date and time the host processed the transaction</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">transaction_<wbr/>id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The payment gateway assigned transaction identifier</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in types/cash-payments.types.ts:13</li></ul></aside></div>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/d38cd80/src/types/cash-payments.types.ts#L40">types/cash-payments.types.ts:40</a></li></ul></aside></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">

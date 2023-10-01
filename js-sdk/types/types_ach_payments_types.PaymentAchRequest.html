@@ -16,12 +16,67 @@
 <li><a href="../modules/types_ach_payments_types.html">types/ach-payments.types</a></li>
 <li><a href="types_ach_payments_types.PaymentAchRequest.html">PaymentAchRequest</a></li></ul>
 <h1>Type alias PaymentAchRequest</h1></div>
-<div class="tsd-signature"><span class="tsd-kind-type-alias">Payment<wbr/>Ach<wbr/>Request</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+<div class="tsd-signature"><span class="tsd-kind-type-alias">Payment<wbr/>Ach<wbr/>Request</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">ach_detail</span><span class="tsd-signature-symbol">: </span><a href="types_ach_payments_types.PaymentAchObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentAchObject</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">customer_detail</span><span class="tsd-signature-symbol">: </span><a href="types_shared_payment_types.PaymentCustomerObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCustomerObject</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">memo</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">meta_data</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">mid</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">order_id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">reference_id</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">send_receipt</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">token</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">total_amount</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">type</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
 <div class="tsd-type-declaration">
 <h4>Type declaration</h4>
-<ul class="tsd-parameters"></ul></div><aside class="tsd-sources">
+<ul class="tsd-parameters">
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">ach_<wbr/>detail</span><span class="tsd-signature-symbol">: </span><a href="types_ach_payments_types.PaymentAchObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentAchObject</a></h5>
+<div class="tsd-comment tsd-typography"><p>ACH account payment detail object.  Required if <code>token</code> value is not provided</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">customer_<wbr/>detail</span><span class="tsd-signature-symbol">: </span><a href="types_shared_payment_types.PaymentCustomerObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCustomerObject</a></h5>
+<div class="tsd-comment tsd-typography"><p>Customer to associate with payment</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">memo</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Payment memo provided on customer receipts</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">meta_<wbr/>data</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+<div class="tsd-comment tsd-typography"><p>Key-value pairs for storing additional information about the payment in a structured format.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">mid</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The merchant account id assigned by the service provider that will process the payment</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">order_<wbr/>id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Unique order ID for this transaction. If not provided, a unique order id will be generated as &#39;ORDER_&lt;8 random characters&gt;.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">reference_<wbr/>id</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>An internal reference id that will be echo&#39;d back in the message response.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">send_<wbr/>receipt</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span></h5>
+<div class="tsd-comment tsd-typography"><p>Set <code>true</code> to send the customer an email payment receipt.  If <code>true</code> you must provide a <code>customer.email</code> value.  Default is <code>false</code>.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">token</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>ACH payment token value.  Required if <code>ach_detail</code> is not provided</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">total_<wbr/>amount</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The total amount to process.  Use numbers for dollar amount and up to 2 decimal places for cents.  Example $100.00 could be 100 or 100.00</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">type</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>ACH/bank transfer type.  Accepted values are &#39;CREDIT&#39; (payout from merchant account) or &#39;DEBIT&#39; (draw from a customer account)</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in types/ach-payments.types.ts:8</li></ul></aside></div>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/d38cd80/src/types/ach-payments.types.ts#L38">types/ach-payments.types.ts:38</a></li></ul></aside></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">

@@ -16,12 +16,80 @@
 <li><a href="../modules/types_cash_payments_types.html">types/cash-payments.types</a></li>
 <li><a href="types_cash_payments_types.PaymentCashRequest.html">PaymentCashRequest</a></li></ul>
 <h1>Type alias PaymentCashRequest</h1></div>
-<div class="tsd-signature"><span class="tsd-kind-type-alias">Payment<wbr/>Cash<wbr/>Request</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+<div class="tsd-signature"><span class="tsd-kind-type-alias">Payment<wbr/>Cash<wbr/>Request</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">amount</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">currency</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">customer_detail</span><span class="tsd-signature-symbol">?: </span><a href="types_shared_payment_types.PaymentCustomerObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCustomerObject</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">discount_detail</span><span class="tsd-signature-symbol">?: </span><a href="types_shared_payment_types.PaymentDiscountObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentDiscountObject</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">invoice_id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">ip_address</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">items_detail</span><span class="tsd-signature-symbol">?: </span><a href="types_shared_payment_types.PaymentItemsObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentItemsObject</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">mid</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">order_id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">reference_id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">service_charge</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">shipping_detail</span><span class="tsd-signature-symbol">?: </span><a href="types_shared_payment_types.PaymentShippingObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentShippingObject</a><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">totp</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
+<div class="tsd-comment tsd-typography"><p>Parameters to accept and record a cash payment.</p>
+</div>
 <div class="tsd-type-declaration">
 <h4>Type declaration</h4>
-<ul class="tsd-parameters"></ul></div><aside class="tsd-sources">
+<ul class="tsd-parameters">
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">amount</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The total cash amount accepted.  Use numbers for dollar amount and up to 2 decimal places for cents.  Example $100.00 could be 100 or 100.00</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">currency</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>ISO 4127 currency code.  Default is &#39;USD&#39;</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">customer_<wbr/>detail</span><span class="tsd-signature-symbol">?: </span><a href="types_shared_payment_types.PaymentCustomerObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentCustomerObject</a></h5>
+<div class="tsd-comment tsd-typography"><p>The payment customer detail object.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">discount_<wbr/>detail</span><span class="tsd-signature-symbol">?: </span><a href="types_shared_payment_types.PaymentDiscountObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentDiscountObject</a></h5>
+<div class="tsd-comment tsd-typography"><p>The payment discount object</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">invoice_<wbr/>id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Associate payment transaction with an invoice</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">ip_<wbr/>address</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Payment originating IP address.  If not provided the system will attempt to qualify an ip address from the request host value</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">items_<wbr/>detail</span><span class="tsd-signature-symbol">?: </span><a href="types_shared_payment_types.PaymentItemsObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentItemsObject</a></h5>
+<div class="tsd-comment tsd-typography"><p>The payment sale items sold array.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">mid</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The merchant account id assigned by the service provider that will accept the cash payment</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">order_<wbr/>id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Unique order ID for this transaction. If not provided, a unique order id will be generated as &#39;ORDER_&lt;8 random characters&gt;.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">reference_<wbr/>id</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>An internal reference id that will be echo&#39;d back in the message response.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">service_<wbr/>charge</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The amount of this transaction that should be allocated to a service charge.  Cannot exceed the request <code>amount</code> value.  Use numbers for dollar amount and up to 2 decimal places for cents.  Example $100.00 could be 100 or 100.0</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-property">shipping_<wbr/>detail</span><span class="tsd-signature-symbol">?: </span><a href="types_shared_payment_types.PaymentShippingObject.html" class="tsd-signature-type tsd-kind-type-alias">PaymentShippingObject</a></h5>
+<div class="tsd-comment tsd-typography"><p>The payment transaction shipping object.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">totp</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>Route a transaction to an external provider.  Your servicee provider will provide value(s) required here.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in types/cash-payments.types.ts:10</li></ul></aside></div>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/d38cd80/src/types/cash-payments.types.ts#L10">types/cash-payments.types.ts:10</a></li></ul></aside></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
