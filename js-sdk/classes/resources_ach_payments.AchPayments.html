@@ -23,7 +23,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">AchPayments</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/f013084/src/resources/ach-payments.ts#L14">resources/ach-payments.ts:14</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/c790744/src/resources/ach-payments.ts#L13">resources/ach-payments.ts:13</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -61,7 +61,7 @@
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from Base.constructor</p>
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/f013084/src/base.ts#L22">base.ts:22</a></li></ul></aside></li></ul></section></section>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/c790744/src/base.ts#L22">base.ts:22</a></li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member"><a id="processAchPayment" class="tsd-anchor"></a>
@@ -69,31 +69,43 @@
 <ul class="tsd-signatures">
 <li class="tsd-signature tsd-anchor-link" id="processAchPayment.processAchPayment-1"><span class="tsd-kind-call-signature">process<wbr/>Ach<wbr/>Payment</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">req</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/types_ach_payments_types.PaymentAchResponse.html" class="tsd-signature-type tsd-kind-type-alias">PaymentAchResponse</a><span class="tsd-signature-symbol">&gt;</span><a href="#processAchPayment.processAchPayment-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">req</span>: <a href="../types/types_ach_payments_types.PaymentAchRequest.html" class="tsd-signature-type tsd-kind-type-alias">PaymentAchRequest</a></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/types_ach_payments_types.PaymentAchResponse.html" class="tsd-signature-type tsd-kind-type-alias">PaymentAchResponse</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/f013084/src/resources/ach-payments.ts#L15">resources/ach-payments.ts:15</a></li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member"><a id="processCreditCardRefund" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>process<wbr/>Credit<wbr/>Card<wbr/>Refund</span><a href="#processCreditCardRefund" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="processCreditCardRefund.processCreditCardRefund-1"><span class="tsd-kind-call-signature">process<wbr/>Credit<wbr/>Card<wbr/>Refund</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">req</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/types_ach_payments_types.PaymentAchRefundResponse.html" class="tsd-signature-type tsd-kind-type-alias">PaymentAchRefundResponse</a><span class="tsd-signature-symbol">&gt;</span><a href="#processCreditCardRefund.processCreditCardRefund-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Process a credit card refund.</p>
+<div class="tsd-comment tsd-typography"><p>Processes an ACH payment.</p>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">req</span>: <a href="../types/types_ach_payments_types.PaymentAchRefund.html" class="tsd-signature-type tsd-kind-type-alias">PaymentAchRefund</a></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">req</span>: <a href="../types/types_ach_payments_types.PaymentAchRequest.html" class="tsd-signature-type tsd-kind-type-alias">PaymentAchRequest</a></h5>
+<div class="tsd-comment tsd-typography"><p>The ACH payment request object.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/types_ach_payments_types.PaymentAchResponse.html" class="tsd-signature-type tsd-kind-type-alias">PaymentAchResponse</a><span class="tsd-signature-symbol">&gt;</span></h4><ul>
+<li>A promise that resolves to the payment response object.</li>
+</ul>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/c790744/src/resources/ach-payments.ts#L20">resources/ach-payments.ts:20</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="processCreditCardRefund" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>process<wbr/>Credit<wbr/>Card<wbr/>Refund</span><a href="#processCreditCardRefund" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="processCreditCardRefund.processCreditCardRefund-1"><span class="tsd-kind-call-signature">process<wbr/>Credit<wbr/>Card<wbr/>Refund</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">req</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/types_ach_payments_types.PaymentAchRefundResponse.html" class="tsd-signature-type tsd-kind-type-alias">PaymentAchRefundResponse</a><span class="tsd-signature-symbol">&gt;</span><a href="#processCreditCardRefund.processCreditCardRefund-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Process an ACH/Bank account refund.</p>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">req</span>: <a href="../types/types_ach_payments_types.PaymentAchRefund.html" class="tsd-signature-type tsd-kind-type-alias">PaymentAchRefund</a></h5>
+<div class="tsd-comment tsd-typography"><p>The ACH/Bank account payment refund object.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/types_ach_payments_types.PaymentAchRefundResponse.html" class="tsd-signature-type tsd-kind-type-alias">PaymentAchRefundResponse</a><span class="tsd-signature-symbol">&gt;</span></h4><p>The ACH/Bank account payment refund response.</p>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/f013084/src/resources/ach-payments.ts#L131">resources/ach-payments.ts:131</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/c790744/src/resources/ach-payments.ts#L169">resources/ach-payments.ts:169</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="processCreditCardVoid" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>process<wbr/>Credit<wbr/>Card<wbr/>Void</span><a href="#processCreditCardVoid" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -105,14 +117,17 @@
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">req</span>: <a href="../types/types_ach_payments_types.PaymentAchVoid.html" class="tsd-signature-type tsd-kind-type-alias">PaymentAchVoid</a></h5></li></ul></div>
+<h5><span class="tsd-kind-parameter">req</span>: <a href="../types/types_ach_payments_types.PaymentAchVoid.html" class="tsd-signature-type tsd-kind-type-alias">PaymentAchVoid</a></h5>
+<div class="tsd-comment tsd-typography"><p>The ACH/Bank account payment void object.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../types/types_ach_payments_types.PaymentAchVoidResponse.html" class="tsd-signature-type tsd-kind-type-alias">PaymentAchVoidResponse</a><span class="tsd-signature-symbol">&gt;</span></h4><ul>
 <li>The ACH/Bank account payment void response.</li>
 </ul>
 
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/f013084/src/resources/ach-payments.ts#L116">resources/ach-payments.ts:116</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/c790744/src/resources/ach-payments.ts#L154">resources/ach-payments.ts:154</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-protected tsd-is-inherited"><a id="request" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagProtected">Protected</code> <span>request</span><a href="#request" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-protected tsd-is-inherited">
@@ -148,7 +163,7 @@
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from Base.request</p>
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/f013084/src/base.ts#L37">base.ts:37</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/c790744/src/base.ts#L37">base.ts:37</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -182,6 +197,7 @@
 <li><a href="../modules/resources_cash_payments.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/cash-payments</a></li>
 <li><a href="../modules/resources_gift_cards.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/gift-cards</a></li>
 <li><a href="../modules/resources_marketplace.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/marketplace</a></li>
+<li><a href="../modules/resources_payment_tokens.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/payment-tokens</a></li>
 <li><a href="../modules/resources_proof_of_delivery.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/proof-of-delivery</a></li>
 <li><a href="../modules/resources_transactions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/transactions</a></li>
 <li><a href="../modules/resources_utils.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/utils</a></li>
@@ -190,6 +206,7 @@
 <li><a href="../modules/types_cash_payments_types.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/cash-payments.types</a></li>
 <li><a href="../modules/types_gift_cards_types.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/gift-cards.types</a></li>
 <li><a href="../modules/types_marketplace_types.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/marketplace.types</a></li>
+<li><a href="../modules/types_payment_tokens_types.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/payment-tokens.types</a></li>
 <li><a href="../modules/types_proof_of_delivery_types.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/proof-of-delivery.types</a></li>
 <li><a href="../modules/types_shared_payment_types.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/shared-payment.types</a></li>
 <li><a href="../modules/types_transactions_types.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/transactions.types</a></li></ul></nav></div></div></div>

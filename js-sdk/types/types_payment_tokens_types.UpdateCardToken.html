@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>getCardBrand | qor-direct-sdk</title><meta name="description" content="Documentation for qor-direct-sdk"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>UpdateCardToken | qor-direct-sdk</title><meta name="description" content="Documentation for qor-direct-sdk"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,28 +13,33 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../index.html">qor-direct-sdk</a></li>
-<li><a href="../modules/resources_utils.html">resources/utils</a></li>
-<li><a href="resources_utils.getCardBrand.html">getCardBrand</a></li></ul>
-<h1>Function getCardBrand</h1></div>
-<section class="tsd-panel">
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="getCardBrand"><span class="tsd-kind-call-signature">get<wbr/>Card<wbr/>Brand</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">cardNumber</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><a href="#getCardBrand" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Determines the credit card brand based on the credit card number.</p>
+<li><a href="../modules/types_payment_tokens_types.html">types/payment-tokens.types</a></li>
+<li><a href="types_payment_tokens_types.UpdateCardToken.html">UpdateCardToken</a></li></ul>
+<h1>Type alias UpdateCardToken</h1></div>
+<div class="tsd-signature"><span class="tsd-kind-type-alias">Update<wbr/>Card<wbr/>Token</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">month</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">token</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-kind-property">year</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
+<div class="tsd-comment tsd-typography"><p>The update credit card token object</p>
 </div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">cardNumber</span>: <span class="tsd-signature-type">string</span></h5>
-<div class="tsd-comment tsd-typography"><p>The credit card number.</p>
+<div class="tsd-type-declaration">
+<h4>Type declaration</h4>
+<ul class="tsd-parameters">
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">month</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The token new expiration month value</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">token</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The token to be updated.  Must be a valid &#39;STORED&#39; token</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li class="tsd-parameter">
+<h5><span class="tsd-kind-property">year</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The token new expiration year value</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><p>The credit card brand (e.g., &quot;Visa&quot;, &quot;Mastercard&quot;, &quot;American Express&quot;).</p>
-
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/f013084/src/resources/utils.ts#L151">resources/utils.ts:151</a></li></ul></aside></li></ul></section></div>
+<li>Defined in <a href="https://github.com/QorLabs/qor-direct-js-sdk/blob/c790744/src/types/payment-tokens.types.ts#L77">types/payment-tokens.types.ts:77</a></li></ul></aside></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -59,6 +64,7 @@
 <li><a href="../modules/resources_cash_payments.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/cash-payments</a></li>
 <li><a href="../modules/resources_gift_cards.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/gift-cards</a></li>
 <li><a href="../modules/resources_marketplace.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/marketplace</a></li>
+<li><a href="../modules/resources_payment_tokens.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/payment-tokens</a></li>
 <li><a href="../modules/resources_proof_of_delivery.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/proof-of-delivery</a></li>
 <li><a href="../modules/resources_transactions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/transactions</a></li>
 <li><a href="../modules/resources_utils.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>resources/utils</a></li>
@@ -67,6 +73,7 @@
 <li><a href="../modules/types_cash_payments_types.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/cash-payments.types</a></li>
 <li><a href="../modules/types_gift_cards_types.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/gift-cards.types</a></li>
 <li><a href="../modules/types_marketplace_types.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/marketplace.types</a></li>
+<li><a href="../modules/types_payment_tokens_types.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/payment-tokens.types</a></li>
 <li><a href="../modules/types_proof_of_delivery_types.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/proof-of-delivery.types</a></li>
 <li><a href="../modules/types_shared_payment_types.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/shared-payment.types</a></li>
 <li><a href="../modules/types_transactions_types.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>types/transactions.types</a></li></ul></nav></div></div></div>
